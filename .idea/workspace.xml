@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4070f746-4791-45b0-b4c5-12b04868dcd1" name="Default Changelist" comment="" />
+    <list default="true" id="4070f746-4791-45b0-b4c5-12b04868dcd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="book" value="2" />
+          <entry key="gitignore" value="4" />
           <entry key="html" value="5" />
           <entry key="java" value="17" />
           <entry key="jsp" value="2" />
@@ -70,12 +74,14 @@
           <entry key="HTML" value="5" />
           <entry key="JAVA" value="17" />
           <entry key="JSP" value="2" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scratch" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="18" />
           <entry key="java" value="121" />
           <entry key="sql" value="12" />
           <entry key="txt" value="7" />
@@ -85,7 +91,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="121" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="25" />
           <entry key="SQL" value="12" />
           <entry key="XML" value="9" />
         </counts>
@@ -127,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/entity/SelectQuestion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="580">
@@ -150,6 +156,15 @@
                 <element signature="e#1074#1075#0" expanded="true" />
                 <element signature="e#1107#1108#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -235,6 +250,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -249,6 +267,7 @@
         <option value="$PROJECT_DIR$/src/com/test/entity/Student.java" />
         <option value="$PROJECT_DIR$/src/com/test/entity/Teacher.java" />
         <option value="$PROJECT_DIR$/src/com/test/entity/SelectQuestion.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -280,6 +299,9 @@
     <option name="height" value="1045" />
   </component>
   <component name="ProjectId" id="1UPtqIkLvNtgemZ4jCR4X6c7Dhd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -310,7 +332,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592918824506" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592919311398" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysql-connector-java-8.0.18.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -429,15 +451,16 @@
       <workItem from="1575871857543" duration="617000" />
       <workItem from="1576751012377" duration="2699000" />
       <workItem from="1592826269996" duration="6604000" />
-      <workItem from="1592903200160" duration="1400000" />
+      <workItem from="1592903200160" duration="2069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10703000" />
+    <option name="totallyTimeSpent" value="11372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -631,6 +654,13 @@
             <element signature="e#1074#1075#0" expanded="true" />
             <element signature="e#1107#1108#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
