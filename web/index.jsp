@@ -4,6 +4,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <a href="login.jsp">登录</a><br/>
+  <a href="register.jsp">注册</a>
   </body>
 </html>
