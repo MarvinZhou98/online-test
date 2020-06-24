@@ -3,7 +3,7 @@ package com.test.entity;
 public class Teacher extends User{
     private Test[]	Tests;
 
-    public Teacher(String userID, String userPassword, String userName, String userType, Test[] tests) {
+    public Teacher(String userID, String userPassword, String userName, char userType, Test[] tests) {
         super(userID, userPassword, userName, userType);
         Tests = tests;
     }

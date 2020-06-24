@@ -1,12 +1,12 @@
 package com.test.entity;
 
 public class User {
-    private String	UserID;
+    private String UserID;
     private String UserPassword;
     private String UserName;
-    private String UserType;
+    private char UserType;
 
-    public User(String userID, String userPassword, String userName, String userType) {
+    public User(String userID, String userPassword, String userName, char userType) {
         UserID = userID;
         UserPassword = userPassword;
         UserName = userName;
@@ -40,11 +40,11 @@ public class User {
         UserName = userName;
     }
 
-    public String getUserType() {
+    public char getUserType() {
         return UserType;
     }
 
-    public void setUserType(String userType) {
+    public void setUserType(char userType) {
         UserType = userType;
     }
 }

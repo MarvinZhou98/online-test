@@ -2,15 +2,15 @@ package com.test.entity;
 
 public class Question {
     private int	Num;
-    private String	Type;
-    private String	Answer;
-    private String	Content;
+    private char Type;
+    private String Answer;
+    private String Content;
     private int	ID;
 
     public Question() {
     }
 
-    public Question(int num, String type, String answer, String content, int ID) {
+    public Question(int num, char type, String answer, String content, int ID) {
         Num = num;
         Type = type;
         Answer = answer;
@@ -26,11 +26,11 @@ public class Question {
         Num = num;
     }
 
-    public String getType() {
+    public char getType() {
         return Type;
     }
 
-    public void setType(String type) {
+    public void setType(char type) {
         Type = type;
     }
 

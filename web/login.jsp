@@ -23,7 +23,6 @@
 <div class="center">
     <h1>登录</h1>
     <form>
-        姓名：<input type="text"><br />
         账号：<input type="text"><br />
         密码：<input type="password"><br />
         用户类型：<select name="" id="">

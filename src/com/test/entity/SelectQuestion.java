@@ -6,7 +6,7 @@ public class SelectQuestion extends Question {
     private String SelectC;
     private String SelectD;
 
-    public SelectQuestion(int num, String type, String answer, String content, int ID, String selectA, String selectB, String selectC, String selectD) {
+    public SelectQuestion(int num, char type, String answer, String content, int ID, String selectA, String selectB, String selectC, String selectD) {
         super(num, type, answer, content, ID);
         SelectA = selectA;
         SelectB = selectB;
