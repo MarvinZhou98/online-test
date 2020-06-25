@@ -4,7 +4,7 @@ public class Test {
     private String	Name;
     private int	Time;
     private SelectQuestion[] Questions;
-    private int	TestID;
+    private String TestID;
 
     public Test() {
     }
@@ -33,11 +33,11 @@ public class Test {
         Questions = questions;
     }
 
-    public int getTestID() {
+    public String getTestID() {
         return TestID;
     }
 
-    public void setTestID(int testID) {
+    public void setTestID(String testID) {
         TestID = testID;
     }
 }
