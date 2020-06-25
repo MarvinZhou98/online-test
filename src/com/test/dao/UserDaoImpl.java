@@ -1,8 +1,7 @@
 package com.test.dao;
 
-import com.test.entity.Grade;
 import com.test.entity.User;
-import com.net.jdbc.JDBCUtils;
+import net.jdbc.JDBCUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

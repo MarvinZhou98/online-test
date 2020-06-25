@@ -1,9 +1,6 @@
-package com.net.jdbc;
+package net.jdbc;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.sql.*;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 public class JDBCUtils {

@@ -22,12 +22,12 @@
 <body>
 <div class="center">
     <h1>修改密码</h1>
-    <form>
-        账号：<input type="text"><br />
-        旧密码：<input type="password"><br />
-        新密码：<input type="password"><br />
-        <input type="button" value="返回">
-        <input type="button" value="修改">
+    <form action="UserService" method="post">
+        <input type="hidden" name="type" value="changePassword">
+        旧密码：<input type="password" name="pw0"><br />
+        新密码：<input type="password" name="pw1"><br />
+        <a href="/"><input type="button" value="返回"></a>
+        <input type="submit" value="修改">
     </form>
 </div>
 </body>

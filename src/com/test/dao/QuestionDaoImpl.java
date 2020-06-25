@@ -1,13 +1,11 @@
 package com.test.dao;
 
-import com.test.entity.Grade;
 import com.test.entity.Question;
-import com.net.jdbc.JDBCUtils;
+import net.jdbc.JDBCUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 

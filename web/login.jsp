@@ -22,13 +22,10 @@
 <body>
 <div class="center">
     <h1>登录</h1>
-    <form>
-        账号：<input type="text"><br />
-        密码：<input type="password"><br />
-        用户类型：<select name="" id="">
-        <option>学生</option>
-        <option>老师</option>
-        <option>管理员</option>
+    <form action="UserService" method="post">
+        <input type="hidden" name="type" value="login">
+        账号：<input type="text" name="UserID"><br />
+        密码：<input type="password" name="UserPassword"><br />
     </select><br />
         <input type="submit" value="登录">
     </form>

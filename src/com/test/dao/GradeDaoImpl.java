@@ -2,13 +2,12 @@ package com.test.dao;
 
 import com.test.entity.Grade;
 
-import java.net.ConnectException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import com.net.jdbc.JDBCUtils;
+import net.jdbc.JDBCUtils;
 
 public class GradeDaoImpl implements GradeDao {
     @Override

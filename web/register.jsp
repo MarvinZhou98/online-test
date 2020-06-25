@@ -22,7 +22,7 @@
 <body>
 <div class="center">
     <h1>注册</h1>
-    <form action="/UserService" method="post">
+    <form action="UserService" method="post">
         <input type="hidden" name="type" value="register">
         姓名：<input type="text" name="UserName"><br />
         账号：<input type="text" name="UserID"><br />

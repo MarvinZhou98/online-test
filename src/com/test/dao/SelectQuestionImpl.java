@@ -1,8 +1,7 @@
 package com.test.dao;
 
-import com.test.entity.Question;
 import com.test.entity.SelectQuestion;
-import com.net.jdbc.JDBCUtils;
+import net.jdbc.JDBCUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
