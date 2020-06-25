@@ -2,18 +2,9 @@ package com.test.entity;
 
 public class Test {
     private String	Name;
-    private int	Grade;
     private int	Time;
-    private Question Questions;
-    private int	ID;
-
-    public Test(String name, int grade, int time, Question questions, int ID) {
-        Name = name;
-        Grade = grade;
-        Time = time;
-        Questions = questions;
-        this.ID = ID;
-    }
+    private SelectQuestion[] Questions;
+    private int	TestID;
 
     public Test() {
     }
@@ -26,14 +17,6 @@ public class Test {
         Name = name;
     }
 
-    public int getGrade() {
-        return Grade;
-    }
-
-    public void setGrade(int grade) {
-        Grade = grade;
-    }
-
     public int getTime() {
         return Time;
     }
@@ -42,19 +25,19 @@ public class Test {
         Time = time;
     }
 
-    public Question getQuestions() {
+    public SelectQuestion[] getQuestions() {
         return Questions;
     }
 
-    public void setQuestions(Question questions) {
+    public void setQuestions(SelectQuestion[] questions) {
         Questions = questions;
     }
 
-    public int getID() {
-        return ID;
+    public int getTestID() {
+        return TestID;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setTestID(int testID) {
+        TestID = testID;
     }
 }
