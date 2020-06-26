@@ -111,8 +111,8 @@ public class UserService extends HttpServlet {
                     out.println("<h1>密码错误</h1><br/><a href='/'>返回</a>");
                 }else {
                     User u = ChangePassword(user,pw1);
-                    out.println("<h1>密码修改成功</h1><br/><a href='/'>返回</a>");
                     session.setAttribute("user",u);
+                    out.println("<h1>密码修改成功</h1><br/><a href='/'>返回</a>");
                 }
             }
         }

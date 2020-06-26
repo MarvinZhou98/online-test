@@ -104,7 +104,7 @@ public class SelectQuestionImpl implements SelectQuestionDao{
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        String sql = "insert into Question values(?,?,?,?,?,?,?,?,?)";
+        String sql = "insert into SelectQuestion values(?,?,?,?,?,?,?,?,?)";
         try {
             conn = JDBCUtils.getConnection();
             ps = conn.prepareStatement(sql);

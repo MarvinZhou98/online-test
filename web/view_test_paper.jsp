@@ -1,4 +1,8 @@
-<%--
+<%@ page import="com.test.entity.User" %>
+<%@ page import="com.test.dao.TestDao" %>
+<%@ page import="com.test.dao.TestDaoImpl" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.test.entity.Test" %><%--
   Created by IntelliJ IDEA.
   User: HASEE
   Date: 2020/6/24
@@ -16,23 +20,54 @@
             width: 100%;
             text-align: center;
         }
+        .tbcenter{
+            margin: 0 auto;
+        }
     </style>
 </head>
 
 <body>
 <div class="center">
     <h1>查看试卷</h1>
-    <form >
-        <h2> 试卷名：$name <br/>
-            题号：$id<br/>
-            题目类型：$type<br/>
-            题目内容：$content<br/>
-            分值：$score<br/>
-            答案：$answer <br/>
+    <%
+        User user= (User) session.getAttribute("user");
+        if(user==null)
+            response.sendRedirect("/");
+        TestDao td = new TestDaoImpl();
+        List<Test> l = td.SelectAllTest();
+        if(l.size()==0){
+    %>
+    <h2>无试卷</h2>
+    <%
+        }else {
+    %>
+    <table class="tbcenter">
+        <tr>
+            <th>考试名</th>
+            <th>考试时间</th>
+            <th>链接</th>
+        </tr>
 
-
-            <input type="submit" value="返回"><br/>
-    </form>
+    <%
+            for(int i=0;i<l.size();i++){
+                Test t = l.get(i);
+    %>
+    <tr>
+        <td><%= t.getName()%></td>
+        <td><%= t.getTime()%></td>
+        <td><form action="TestService" method="post">
+            <input type="hidden" name="type" value="testpaper">
+            <input type="hidden" name="testid" value="<%= t.getTestID() %>">
+            <input type="submit" value="开始考试">
+        </form></td>
+    </tr>
+    <%
+            }
+    %>
+    </table>
+    <%
+        }
+    %>
 </div>
 </body>
 

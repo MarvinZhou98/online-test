@@ -1,4 +1,8 @@
-<%--
+<%@ page import="com.test.entity.User" %>
+<%@ page import="com.test.entity.Grade" %>
+<%@ page import="com.test.dao.GradeDao" %>
+<%@ page import="com.test.dao.GradeDaoImpl" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: HASEE
   Date: 2020/6/23
@@ -20,12 +24,25 @@
 </head>
 
 <body>
+<%
+    User user= (User) session.getAttribute("user");
+    if(user==null)
+        response.sendRedirect("/");
+    GradeDao gd = new GradeDaoImpl();
+    List<Grade> grades = gd.SelectAllGrade();
+%>
 <div class="center">
     <h1>成绩查询</h1>
-    <h2>$subject的成绩是$score</h2>
-    <form>
-        <input type="button" value="返回"><br />
-    </form>
+    <%
+        for(int i=0;i<grades.size();i++){
+            Grade g = grades.get(i);
+            if(g.getUserID().equals(user.getUserID())){
+    %>
+    <h2>课号为<%=g.getTestID()%>的成绩是<%=g.getGrade()%>分</h2>
+    <%
+        }}
+    %>
+    <a href="/"><button>返回</button></a>
 </div>
 </body>
 

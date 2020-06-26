@@ -11,7 +11,7 @@ import java.util.List;
 public class TestDaoImpl implements TestDao {
     @Override
     public List<Test> SelectAllTest() {
-        SelectQuestionImpl a = new SelectQuestionImpl();
+        SelectQuestionDao a = new SelectQuestionImpl();
         List<Test> listtest = new ArrayList<Test>();
         Connection conn = null;
         PreparedStatement ps = null;
