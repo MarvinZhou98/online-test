@@ -22,12 +22,12 @@ public class GradeDaoImpl implements GradeDao {
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
-                String Name = rs.getString("SName");
-                String TestName = rs.getString("Testname");
+                String UserID = rs.getString("Sno");
+                String TestID = rs.getString("TestID");
                 int Grade = rs.getInt("Grade");
                 Grade grade = new Grade();
-                grade.setName(Name);
-                grade.setTestName(TestName);
+                grade.setUserID(UserID);
+                grade.setTestID(TestID);
                 grade.setGrade(Grade);
                 listgrade.add(grade);
             }
@@ -51,8 +51,8 @@ public class GradeDaoImpl implements GradeDao {
         try {
             conn = JDBCUtils.getConnection();
             ps = conn.prepareStatement(sql);
-            ps.setString(1, grade.getName());
-            ps.setString(2, grade.getTestName());
+            ps.setString(1, grade.getUserID());
+            ps.setString(2, grade.getTestID());
             ps.setInt(3, grade.getGrade());
             rows = ps.executeUpdate();
         } catch (Exception e) {
@@ -69,13 +69,13 @@ public class GradeDaoImpl implements GradeDao {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        String sql = "update Grade set Grade=? where Name=? and TestName=?";
+        String sql = "update Grade set Grade=? where TestID=? and Sno=?";
         try {
             conn = JDBCUtils.getConnection();
             ps = conn.prepareStatement(sql);
             ps.setInt(1, grade.getGrade());
-            ps.setString(2, grade.getName());
-            ps.setString(3, grade.getTestName());
+            ps.setString(2, grade.getTestID());
+            ps.setString(3, grade.getUserID());
             rows = ps.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();

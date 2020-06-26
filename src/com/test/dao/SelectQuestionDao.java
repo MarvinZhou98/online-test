@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface SelectQuestionDao {
     public List<SelectQuestion> SelectAllQuestion();
+    public List<SelectQuestion>SelectQuestion(String id);
     public int InsertQuestion(SelectQuestion selectq);
     public int deleteQuestion(int num);
     public int updateQuestion(SelectQuestion selectq);

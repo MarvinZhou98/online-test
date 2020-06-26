@@ -1,9 +1,11 @@
 package com.test.entity;
 
+import java.util.List;
+
 public class Test {
     private String	Name;
     private int	Time;
-    private SelectQuestion[] Questions;
+    private List<SelectQuestion> Questions;
     private String TestID;
 
     public Test() {
@@ -25,11 +27,11 @@ public class Test {
         Time = time;
     }
 
-    public SelectQuestion[] getQuestions() {
+    public List<SelectQuestion> getQuestions() {
         return Questions;
     }
 
-    public void setQuestions(SelectQuestion[] questions) {
+    public void setQuestions(List<SelectQuestion> questions) {
         Questions = questions;
     }
 

@@ -55,6 +55,50 @@ public class SelectQuestionImpl implements SelectQuestionDao{
     }
 
     @Override
+    public List<SelectQuestion> SelectQuestion(String id) {
+        List<SelectQuestion> listselect = new ArrayList<>();
+        Connection conn = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "select * from SelectQuestion where TestID=?";
+        try {
+            conn = JDBCUtils.getConnection();
+            ps = conn.prepareStatement(sql);
+            ps.setString(1,id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                int num=rs.getInt("No");
+                String type = rs.getString("Type");
+                String content = rs.getString("Content");
+                String answer=rs.getString("Answer");
+                String A=rs.getString("A");
+                String B=rs.getString("B");
+                String C=rs.getString("C");
+                String D=rs.getString("D");
+                int ID = rs.getInt("TestID");
+                SelectQuestion selectq=new SelectQuestion();
+                selectq.setNum(num);
+                selectq.setType(type.charAt(0));
+                selectq.setContent(content);
+                selectq.setAnswer(answer);
+                selectq.setSelectA(A);
+                selectq.setSelectB(B);
+                selectq.setSelectC(C);
+                selectq.setSelectD(D);
+                selectq.setID(ID);
+                listselect.add(selectq);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        } finally {
+            JDBCUtils.release(conn, ps, rs);
+        }
+        return listselect;
+    }
+
+    @Override
     public int InsertQuestion(SelectQuestion selectq) {
         int rows = 0;
         Connection conn = null;
